@@ -36,14 +36,14 @@ button {
     color: #2e2f42
 }
 
-.menu-item {
+.menu-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.menu-link:hover,
+.menu-link:focus {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #404bbf;
@@ -53,14 +53,14 @@ button {
     font-style: normal 
 }
 
-.address-list-item {
+.address-list-link {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: inherit;
 }
 
-.address-list-item:hover,
-.address-list-item:focus {
+.address-list-link:hover,
+.address-list-link:focus {
   letter-spacing: 0.02em;
   color: #404bbf;
 }
@@ -113,7 +113,11 @@ button {
 /* ================ TEAM STYLES ================ */
 
 .team-section {
-    background-color: #F4F4FD
+    background-color: #F4F4FD;
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
 }
 
 .team-tittle {
@@ -122,7 +126,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  text-transform: capitalize
+  text-transform: capitalize;
 }
 
 .team-list-name {

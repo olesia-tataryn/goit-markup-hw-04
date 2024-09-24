@@ -1,7 +1,8 @@
 /* ================ COMMON STYLES ================ */
-ul,
-ol {
-  list-style-type: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 a {
@@ -9,18 +10,72 @@ a {
   color: inherit;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
-  color: #434455;
-  background-color: #FFFFFF;
-}
-
 button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ================ HEADER STYLES ================ */
+
+.header-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+}
 
 .page-logo {
   font-family: "Raleway", sans-serif;
@@ -29,11 +84,33 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;;
+  color: #4d5ae5;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-right: 76px;
 }
 
 .page-logo-studio {
-    color: #2e2f42
+  color: #2e2f42;
+}
+
+.page-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .menu-link {
@@ -49,8 +126,21 @@ button {
   color: #404bbf;
 }
 
-.address-section{
-    font-style: normal 
+.address-section {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .address-list-link {
@@ -67,16 +157,29 @@ button {
 
 /* ================ MAIN PAGE ================ */
 
-.main-section{
-    background-color: #2e2f42
+.main-section {
+  background-color: #2e2f42;
+}
+
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-title {
+  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  max-width: 552px;
 }
 
 .button-order {
@@ -85,6 +188,12 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  padding: 16px 32px 16px 32px;
 }
 
 .button-order:hover,
@@ -97,27 +206,88 @@ button {
 }
 /* ================ QUALITIES STYLES ================ */
 
+.qualities-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1158px;
+}
+
+.qualities-list {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.qualities-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: calc(100% - 24px * 3) / 4;
+}
+
 .qualities-list-tittle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: flex;
 }
 
 .qualities-list-text {
+  display: flex;
+  justify-content: flex-start;
   letter-spacing: 0.02em;
   color: inherit;
+  width: calc(100% - 24px * 3) / 4;
 }
 
 /* ================ TEAM STYLES ================ */
 
 .team-section {
-    background-color: #F4F4FD;
+  background-color: #f4f4fd;
+}
+
+.team-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .team-list-item {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 32px;
+
+border-radius: 0 0 4px 4px;
+padding: 0px 0px 32px 0px;
+width: 264px;
+height: 380px;
+
+
+}
+
+.team-list-person-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
 }
 
 .team-tittle {
@@ -127,6 +297,13 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  margin-bottom: 72px;
+  max-width: 164px;
 }
 
 .team-list-name {
@@ -136,26 +313,76 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-list-profession {
   letter-spacing: 0.02em;
   text-align: center;
   color: inherit;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* ================ PORTFOLIO STYLES ================ */
 
-.portfolio-section{
-    background-color: #FFFFFF
+.portfolio-section {
+  background-color: #ffffff;
+}
+
+.portfolio-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-tittle {
-    text-transform: capitalize;
+  text-transform: capitalize;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-self: center;
+  max-width: 220px;
+  margin-bottom: 72px;
+}
+
+.portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+
+.portfolio-list-project-container {
+  display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-direction: column;
+gap: 8px;
+
+border-bottom: 1px solid #e7e9fc;
+border-left: 1px solid #e7e9fc;
+border-right: 1px solid #e7e9fc;
+padding: 32px 16px;
+width: 360px;
+height: 120px;
 }
 
 .portfolio-list-project-name {
@@ -164,27 +391,44 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-list-project-type {
   letter-spacing: 0.02em;
   color: inherit;
+
 }
 
 /* ================ PAGE FOOTER STYLES ================ */
 
-.page-footer{
-    background-color: #2e2f42
+.page-footer {
+  background-color: #2e2f42;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.page-footer-logo{
-    font-family: "Raleway", sans-serif;
+.page-footer-container{
+  flex-direction: column;
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer-logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5
+  color: #4d5ae5;
+  display: flex;
+  margin-bottom: 16px;
 }
 
 .page-footer-logo-studio {
@@ -195,10 +439,13 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+  display: flex;
 }
 
 .footer-text {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #2e2f42;
+  display: flex;
+  width:264px;
 }

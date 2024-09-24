@@ -75,6 +75,7 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-logo {
@@ -99,10 +100,8 @@ body {
 
 .page-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu {
@@ -111,6 +110,8 @@ body {
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link {
@@ -159,13 +160,13 @@ body {
 
 .main-section {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-container {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .main-title {
@@ -179,7 +180,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
-  max-width: 552px;
+  max-width: 496px;
 }
 
 .button-order {
@@ -188,7 +189,10 @@ body {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
-  display: flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   flex-wrap: nowrap;
   margin-left: auto;
   margin-right: auto;
@@ -206,9 +210,12 @@ body {
 }
 /* ================ QUALITIES STYLES ================ */
 
-.qualities-container {
+.qualities-section {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 120px; 
+}
+
+.qualities-container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1158px;
@@ -227,7 +234,7 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  width: calc(100% - 24px * 3) / 4;
+  width: calc((100% - 72px) / 4);
 }
 
 .qualities-list-tittle {
@@ -237,6 +244,7 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: flex;
+  margin-bottom: 8px;
 }
 
 .qualities-list-text {
@@ -244,18 +252,19 @@ body {
   justify-content: flex-start;
   letter-spacing: 0.02em;
   color: inherit;
-  width: calc(100% - 24px * 3) / 4;
 }
 
 /* ================ TEAM STYLES ================ */
 
 .team-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-list {
@@ -274,18 +283,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 32px;
 
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
+  padding: 0px 0px 0px 0px;
+  width: calc((100% - 72px) / 4);
 }
 
 .team-list-person-container {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-tittle {
@@ -315,6 +323,7 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8px;
 }
 
 .team-list-profession {
@@ -330,11 +339,13 @@ body {
 
 .portfolio-section {
   background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .portfolio-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portfolio-tittle {
@@ -423,7 +434,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  display: flex;
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -435,7 +446,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-  display: flex;
+  display: inline-block;
 }
 
 .footer-text {

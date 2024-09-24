@@ -68,6 +68,10 @@ body {
 
 /* ================ HEADER STYLES ================ */
 
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   margin-left: auto;
@@ -75,7 +79,6 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .page-logo {
@@ -118,6 +121,8 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .menu-link:hover,

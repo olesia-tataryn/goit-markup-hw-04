@@ -268,26 +268,24 @@ body {
 
 .team-list-item {
   background-color: #ffffff;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-gap: 32px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
 
-border-radius: 0 0 4px 4px;
-padding: 0px 0px 32px 0px;
-width: 264px;
-height: 380px;
-
-
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  width: 264px;
+  height: 380px;
 }
 
 .team-list-person-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
 }
 
 .team-tittle {
@@ -355,7 +353,7 @@ height: 380px;
   margin-bottom: 72px;
 }
 
-.portfolio-list{
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
@@ -367,22 +365,21 @@ height: 380px;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-
 }
 
 .portfolio-list-project-container {
   display: flex;
-align-items: flex-start;
-justify-content: center;
-flex-direction: column;
-gap: 8px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 
-border-bottom: 1px solid #e7e9fc;
-border-left: 1px solid #e7e9fc;
-border-right: 1px solid #e7e9fc;
-padding: 32px 16px;
-width: 360px;
-height: 120px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 .portfolio-list-project-name {
@@ -397,7 +394,6 @@ height: 120px;
 .portfolio-list-project-type {
   letter-spacing: 0.02em;
   color: inherit;
-
 }
 
 /* ================ PAGE FOOTER STYLES ================ */
@@ -412,7 +408,7 @@ height: 120px;
   padding-bottom: 100px;
 }
 
-.page-footer-container{
+.page-footer-container {
   flex-direction: column;
   width: 1128px;
   margin-left: auto;
@@ -447,5 +443,5 @@ height: 120px;
   color: #f4f4fd;
   background-color: #2e2f42;
   display: flex;
-  width:264px;
+  width: 264px;
 }

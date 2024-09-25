@@ -74,11 +74,8 @@ body {
 
 .header-container {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: nowrap;
-  width: 100%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-logo {
@@ -90,10 +87,6 @@ body {
   text-transform: uppercase;
   color: #4d5ae5;
 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
   margin-right: 76px;
 }
 
@@ -113,14 +106,13 @@ body {
   justify-content: flex-start;
   flex-direction: row;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .menu-link {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -134,11 +126,6 @@ body {
 
 .address-section {
   font-style: normal;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
-  gap: 40px;
 }
 
 .address-list {
@@ -153,6 +140,8 @@ body {
   font-weight: 400;
   letter-spacing: 0.02em;
   color: inherit;
+  padding-top: 24px;
+  display: block;
 }
 
 .address-list-link:hover,
@@ -181,7 +170,6 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -235,10 +223,6 @@ body {
 }
 
 .qualities-list-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
   width: calc((100% - 72px) / 4);
 }
 
@@ -248,13 +232,10 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  display: flex;
   margin-bottom: 8px;
 }
 
 .qualities-list-text {
-  display: flex;
-  justify-content: flex-start;
   letter-spacing: 0.02em;
   color: inherit;
 }
@@ -284,19 +265,13 @@ body {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
+  
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 0px 0px;
   width: calc((100% - 72px) / 4);
 }
 
 .team-list-person-container {
-  display: flex;
-  flex-direction: column;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -308,13 +283,7 @@ body {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-self: center;
   margin-bottom: 72px;
-  max-width: 164px;
 }
 
 .team-list-name {
@@ -324,10 +293,6 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 8px;
 }
 
@@ -335,10 +300,6 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: inherit;
-
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 /* ================ PORTFOLIO STYLES ================ */
 
@@ -358,13 +319,9 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
-
-  display: flex;
   margin-left: auto;
   margin-right: auto;
-  justify-self: center;
   max-width: 220px;
   margin-bottom: 72px;
 }
@@ -377,25 +334,14 @@ body {
 }
 
 .portfolio-list-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-list-project-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
-
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   padding: 32px 16px;
-  width: 360px;
-  height: 120px;
 }
 
 .portfolio-list-project-name {
@@ -416,19 +362,8 @@ body {
 
 .page-footer {
   background-color: #2e2f42;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.page-footer-container {
-  flex-direction: column;
-  width: 1128px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .page-footer-logo {
@@ -458,6 +393,5 @@ body {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   background-color: #2e2f42;
-  display: flex;
-  width: 264px;
+  max-width: 264px;
 }

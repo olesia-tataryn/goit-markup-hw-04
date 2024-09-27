@@ -380,9 +380,14 @@ gap: 24px;
   background-color:#404bbf;
 }
 
-.team-list-item:focus .social-list-link{
+.social-list-link:focus .social-list-link{
   background-color:#404bbf;
 }
+
+.social-list-icon{
+  fill: #f4f4fd;
+}
+
 /* ================ PORTFOLIO STYLES ================ */
 
 .portfolio-section {

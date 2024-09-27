@@ -380,7 +380,7 @@ gap: 24px;
   background-color:#404bbf;
 }
 
-.social-list-link:focus .social-list-link{
+.social-list-link:focus {
   background-color:#404bbf;
 }
 
